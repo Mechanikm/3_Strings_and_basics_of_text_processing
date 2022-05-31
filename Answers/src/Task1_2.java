@@ -10,7 +10,7 @@ public class Task1_2 {
             System.out.print("Enter string for replacing: ");
             String wordToLetter = scan.nextLine();
 
-           String withoutWord = wordToLetter.replace("word", "letter");
+            String withoutWord = wordToLetter.replace("word", "letter");
 
             System.out.println(withoutWord);
         }
