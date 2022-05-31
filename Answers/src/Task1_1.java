@@ -11,8 +11,7 @@ public class Task1_1 {
             System.out.print("Enter five variables separated by comma: ");
             String wideString = scan.nextLine();
 
-            String[] camelCaseVariables = new String[5];
-            camelCaseVariables = wideString.split(",");
+            String[] camelCaseVariables = wideString.split(",");
 
             ArrayList<String> snakeCaseVariables = new ArrayList<>();
             String[] bigLetters = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q",
