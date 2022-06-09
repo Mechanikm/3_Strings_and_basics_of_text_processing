@@ -20,7 +20,7 @@ public class Task1_4 {
                 }
             }
 
-            System.out.println("There is " + countNumbers + "number[s]");
+            System.out.println("There is " + countNumbers + " number[s]");
         }
     }
 }
