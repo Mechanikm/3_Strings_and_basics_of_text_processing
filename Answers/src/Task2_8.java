@@ -13,17 +13,20 @@ public class Task2_8 {
 
             String pretender = "";
             String longWord = "";
+            while (pretender.length() != wordsThroughSpaces.length()) {
 
-            if (wordsThroughSpaces.indexOf(' ') != 0) {
-                // logic with substring
-            } else {
-                pretender = wordsThroughSpaces;
+                if (wordsThroughSpaces.indexOf(' ') != -1) {
+                    pretender = wordsThroughSpaces.substring(0, wordsThroughSpaces.indexOf(' '));
+                    wordsThroughSpaces = wordsThroughSpaces.substring(wordsThroughSpaces.indexOf(' ') + 1);
+                } else {
+                    pretender = wordsThroughSpaces;
+                    wordsThroughSpaces = "";
+                }
+
+                if (pretender.length() > longWord.length()) {
+                    longWord = pretender;
+                }
             }
-
-            if (pretender.length() > longWord.length()) {
-                longWord = pretender;
-            }
-
             System.out.println("The longest word is: " + longWord);
         }
     }
